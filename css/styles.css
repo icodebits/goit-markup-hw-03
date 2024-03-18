@@ -27,10 +27,16 @@ body {
 ul, ol {
 	list-style-type: none;
     margin: 0px;
+    padding: 0px;
 }
 
 a {
     text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .section-title {
@@ -40,6 +46,27 @@ a {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--dark-color);
+}
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* region logo */
@@ -58,6 +85,25 @@ a {
 }
 
 /* region menu */
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.header-menu-nav {
+    display: flex;
+    align-items: center;
+    gap: 76px;
+}
+
+.header-menu-nav-list {
+    display: flex;
+    gap: 40px;
+}
+
 .menu-nav {
     font-weight: 500;
     font-size: 16px;
@@ -69,7 +115,11 @@ a {
 .menu-nav:hover, .menu-nav:focus {
     color: var(--pressed-state-color);
 }
-
+.header-menu-address {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
 .menu-address {
     font-weight: 400;
     font-style: normal;
@@ -124,6 +174,7 @@ a {
     align-items: center;
     text-align: center;
     gap: 10px;
+    margin-top: 48px;
 }
 
 .button-cta:hover, .button-cta:focus {
@@ -131,10 +182,15 @@ a {
 }
 
 /* region hero */
-.hero {
-    width: 1440px;
-    height: 600px;
+.hero-section {
     background-color: var(--dark-color);
+}
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-title {
@@ -146,6 +202,15 @@ a {
 }
 
 /* region benefits */
+.benefits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
 .benefits-card {
     width: 264px;
 }
@@ -156,6 +221,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-color);
+    margin-bottom: 8px;
 }
 
 .benefits-text {
@@ -166,10 +232,37 @@ a {
     color: var(--text-color);
 }
 
+/* region service */
+.service {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 120px;
+}
+
+.service-title {
+    margin-bottom: 72px;
+    text-transform: capitalize;
+}
+
 /* region team */
 .team {
-    width: 1440px;
     background-color: var(--light-color);
+}
+
+.team-title {
+    padding-top: 120px;
+    margin-bottom: 72px;
+    text-transform: capitalize;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 120px;
 }
 
 .team-card {
@@ -229,13 +322,13 @@ a {
 /* region footer */
 .footer {
     background-color: var(--dark-color);
-    /*width: 1440px;
-    height: 312px;
-    padding: 100px 0 100px 0;*/
 }
 
 .footer-logo {
+    display: inline-block;
     color: var(--light-color);
+    margin-top: 100px;
+    margin-bottom: 16px;
 }
 
 .footer-text {
@@ -245,4 +338,5 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    padding-bottom: 100px;
 }
