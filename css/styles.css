@@ -52,6 +52,9 @@ h1, h2, h3, h4, h5, h6, p {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.section {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -85,6 +88,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* region menu */
+.header {
+    border-bottom: 1px solid var(--accent-color);
+}
 .header-menu {
     display: flex;
     align-items: center;
@@ -134,6 +140,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* region buttons */
+.button-filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
+
 .button-filter {
     font-family: inherit;
     font-weight: 500;
@@ -239,6 +253,11 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: center;
     gap: 24px;
     margin-bottom: 120px;
+    justify-content: space-between;
+}
+
+.service-card-img {
+    height: 300px;
 }
 
 .service-title {
@@ -294,13 +313,30 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* region portfolio */
+.portfolio {
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px 24px;
+}
+
 .portfolio-card {
-    border: 1px solid var(--accent-color);
+    /*border: 1px solid var(--accent-color);*/
     width: 360px;
 }
 
+.portfolio-card-img {
+    height: 300px;
+}
+
 .portfolio-card-content {
-    padding: 0 16px 0 16px;
+    padding: 32px 0px 32px 16px;
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
 }
 
 .portfolio-card-title {
@@ -309,6 +345,7 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-color);
+    margin-bottom: 8px;
 }
 
 .portfolio-card-text {
