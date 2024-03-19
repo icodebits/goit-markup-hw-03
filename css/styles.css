@@ -39,6 +39,12 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 0px;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -55,8 +61,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .section {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0px 15px;
 }
 
 .visually-hidden {
@@ -87,21 +92,24 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--primary-brand-color);
 }
 
+.logo-header {
+    display: block;
+    padding: 24px 0px;
+}
+
 /* region menu */
 .header {
     border-bottom: 1px solid var(--accent-color);
 }
+
 .header-menu {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    align-items: center;
 }
 
 .header-menu-nav {
     display: flex;
-    align-items: center;
     gap: 76px;
 }
 
@@ -116,16 +124,19 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark-color);
+    display: block;
+    padding: 24px 0px;
 }
 
 .menu-nav:hover, .menu-nav:focus {
     color: var(--pressed-state-color);
 }
+
 .header-menu-address {
     display: flex;
     gap: 40px;
-    align-items: center;
 }
+
 .menu-address {
     font-weight: 400;
     font-style: normal;
@@ -133,6 +144,8 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    display: block;
+    padding: 24px 0px;
 }
 
 .menu-address:hover, .menu-address:focus {
@@ -144,7 +157,6 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-top: 96px;
     margin-bottom: 72px;
 }
 
@@ -182,7 +194,7 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: var(--primary-brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    padding: 16px 32px 16px 32px;
+    padding: 16px 32px;
     border: none;
     display: flex;
     align-items: center;
@@ -198,10 +210,10 @@ h1, h2, h3, h4, h5, h6, p {
 /* region hero */
 .hero-section {
     background-color: var(--dark-color);
+    padding: 188px 0px;
 }
+
 .hero {
-    padding-top: 188px;
-    padding-bottom: 188px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,13 +228,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* region benefits */
+.benefits-section {
+    padding: 120px 0px;
+}
+
 .benefits {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 24px;
-    margin-top: 120px;
-    margin-bottom: 120px;
 }
 
 .benefits-card {
@@ -247,13 +260,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* region service */
+.service-section {
+    padding-bottom: 120px;
+}
+
 .service {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     gap: 24px;
-    margin-bottom: 120px;
-    justify-content: space-between;
 }
 
 .service-card-img {
@@ -266,27 +279,23 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* region team */
-.team {
+.team-section {
+    padding: 120px 0px;
     background-color: var(--light-color);
 }
 
 .team-title {
-    padding-top: 120px;
     margin-bottom: 72px;
     text-transform: capitalize;
 }
 
 .team-list {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     gap: 24px;
-    padding-bottom: 120px;
 }
 
 .team-card {
     width: 264px;
-    height: 380px;
     background-color: var(--primary-white-color);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -294,6 +303,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .team-card-content {
     text-align: center;
+    padding: 32px 0px;
 }
 
 .team-card-title {
@@ -302,6 +312,7 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-color);
+    margin-bottom: 8px;
 }
 
 .team-card-text {
@@ -313,23 +324,19 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* region portfolio */
-.portfolio {
+.portfolio-section {
+    padding-top: 96px;
     padding-bottom: 120px;
+}
+
+.portfolio {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 48px 24px;
 }
 
 .portfolio-card {
-    /*border: 1px solid var(--accent-color);*/
     width: 360px;
-}
-
-.portfolio-card-img {
-    height: 300px;
 }
 
 .portfolio-card-content {
@@ -359,12 +366,12 @@ h1, h2, h3, h4, h5, h6, p {
 /* region footer */
 .footer {
     background-color: var(--dark-color);
+    padding: 100px 0px;
 }
 
 .footer-logo {
     display: inline-block;
     color: var(--light-color);
-    margin-top: 100px;
     margin-bottom: 16px;
 }
 
@@ -375,5 +382,4 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    padding-bottom: 100px;
 }
